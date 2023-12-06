@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Red+Hat+Text:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+svg {
+    width: 25px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+header .ikona-koszyk {
+    position: relative;
+}
+
+header .ikona-koszyk span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80%;
+    right: -15px;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 50%;
+}
+
+.blok {
+    margin: auto;
+    padding-top: 15px;
+    width: 1000px;
+    max-width: 90vh;
+    text-align: center;
+}
+
+.listaProduktow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.listaProduktow .item {
+    padding: 20px;
+    background-color: rgb(255, 142, 142);
+    border-radius: 18px;
+}
+
+.listaProduktow .item img {
+    width: 95%;
+    filter: drop-shadow(0 15px 20px rgba(0, 0, 0, 0.8));
+}
+
+.listaProduktow .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listaProduktow .item .cena {
+    font-family: 'Red Hat Text';
+    letter-spacing: 5px;
+    font-size: small;
+}
+
+.listaProduktow .item button {
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: .6rem;
+    background-color: rgb(10, 10, 10);
+    color: rgb(170, 170, 170);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.listaProduktow .item button:hover {
+    color: whitesmoke;
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
