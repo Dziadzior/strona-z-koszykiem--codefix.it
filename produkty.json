@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nazwa": "Komputer gamingowy XDM4",
+    "cena": 5000,
+    "zdj": "obrazy/komputer.png"
+  },
+  {
+    "id": 2,
+    "nazwa": "Laptop gamingowy Acer Paralala",
+    "cena": 4500,
+    "zdj": "obrazy/laptop.png"
+  },
+  {
+    "id": 3,
+    "nazwa": "Szafka serwerowa Cisco Premium",
+    "cena": 1200,
+    "zdj": "obrazy/server.png"
+  },
+  {
+    "id": 4,
+    "nazwa": "Karta graficzna Nvidia 3060TI",
+    "cena": 2000,
+    "zdj": "obrazy/karta.png"
+  },
+  {
+    "id": 5,
+    "nazwa": "Procesor Intel i9 12th Gen",
+    "cena": 8000,
+    "zdj": "obrazy/procesor.png"
+  },
+  {
+    "id": 6,
+    "nazwa": "Klawiatura gamingowa TSBlack",
+    "cena": 600,
+    "zdj": "obrazy/klawiatura.png"
+  },
+  {
+    "id": 7,
+    "nazwa": "Myszka gamingowa GPD2023",
+    "cena": 800,
+    "zdj": "obrazy/myszka.png"
+  },
+  {
+    "id": 8,
+    "nazwa": "Monitor gamingowy XLMP2023",
+    "cena": 1500,
+    "zdj": "obrazy/monitor.png"
+  }
+]

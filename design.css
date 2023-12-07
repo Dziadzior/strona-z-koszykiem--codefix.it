@@ -10,6 +10,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+body.pokaKoszyk .koszyk {
+    inset: 0 0 0 auto;
+}
+
+body.pokaKoszyk .blok {
+    transform: translateX(-250px);
+}
+
 svg {
     width: 25px;
 }
@@ -23,6 +31,7 @@ header {
 
 header .ikona-koszyk {
     position: relative;
+    cursor: pointer;
 }
 
 header .ikona-koszyk span {
@@ -32,8 +41,9 @@ header .ikona-koszyk span {
     align-items: center;
     top: 80%;
     right: -15px;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+    font-size: .7rem;
     background-color: red;
     color: whitesmoke;
     border-radius: 50%;
@@ -45,6 +55,7 @@ header .ikona-koszyk span {
     width: 1000px;
     max-width: 90vh;
     text-align: center;
+    transition: transform .5s;
 }
 
 .listaProduktow {
@@ -70,9 +81,15 @@ header .ikona-koszyk span {
 }
 
 .listaProduktow .item .cena {
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-family: 'Red Hat Text';
     letter-spacing: 5px;
-    font-size: small;
+    font-size: .6rem;
+}
+
+.listaProduktow .item .nazwa {
+    font-size: .6rem;
 }
 
 .listaProduktow .item button {
@@ -92,4 +109,79 @@ header .ikona-koszyk span {
     color: whitesmoke;
     transform: scale(1.1);
     transition: .3s ease-in-out;
+}
+
+/* Koszyk */
+.koszyk {
+    position: fixed;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    inset: 0 -400px 0 auto;
+    width: 400px;
+    background-color: rgb(59, 59, 59);
+    color: rgb(255, 76, 76);
+    transition: .5s;
+}
+
+.koszyk h1 {
+    margin: 0;
+    padding: 20px;
+    font-weight: 300;
+}
+
+.koszyk .przycisk {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.koszyk button {
+    border: none;
+    background-color: rgb(255, 46, 46);
+    font-weight: 600;
+    font-family: 'Red Hat Text';
+    cursor: pointer;
+}
+
+.koszyk .przycisk .zamknij {
+    background-color: rgb(199, 199, 199);
+}
+
+.koszyk .lista .item {
+    display: grid;
+    align-items: center;
+    grid-template-columns:  90px 140px 60px 1fr;
+    gap: 8px;
+    text-align: center;
+}
+
+.koszyk .item:nth-child(even) {
+    background-color: rgb(79, 79, 79);
+}
+
+.koszyk .lista .item img {
+    width: 100%;
+}
+
+.koszyk .ilosc span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    font-family: 'Red Hat Text';
+    border-radius: 50%;
+    background-color: rgb(255, 142, 142);
+    color: black;
+    cursor: pointer;
+}
+
+.koszyk .ilosc span:nth-child(2) {
+    background-color: transparent;
+    color: rgb(255, 142, 142);
+}
+
+.lista {
+    overflow: auto;
+}
+
+.lista::-webkit-scrollbar {
+    width: 0;
 }
