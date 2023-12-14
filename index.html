@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!--  CSS -->
-    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="design.css" />
     <title>Strona z koszykiem - codefix.it</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="blok">
-        <header>
-            <h1>Lista Produktów</h1>
-            <div class="koszykIkona">
-                <img src="obrazy/koszyk.png" alt="">
-                <div class="calaIlosc">0</div>
-            </div>
-        </header>
-
-        <div class="produktLista">
-            <div class="zaw">
-                <img src="obrazy/karta.png">
-                <h2>Karta Graficzna</h2>
-                <div class="cena">5000zł</div>
-                <button>Do Koszyka</button>
-            </div>
+      <header>
+        <h1>Lista Produktów</h1>
+        <div class="koszykIkona">
+          <img src="obrazy/koszyk.png" alt="" />
+          <div class="calaIlosc">0</div>
         </div>
+      </header>
 
+      <div class="produktLista">
+        <div class="zaw">
+          <img src="obrazy/karta.png" />
+          <h2>Karta Graficzna</h2>
+          <div class="cena">5000zł</div>
+          <button>Do Koszyka</button>
+        </div>
+      </div>
+
+      <div class="koszyk">
+        <h2>Koszyk</h2>
+        <div class="koszLista">
+          <div class="zaw">
+            <img src="obrazy/karta.png" />
+            <div class="srodek">
+              <div class="nazwa">Karta Graficzna</div>
+              <div class="cena">5000zł/1 produkt</div>
+            </div>
+            <div class="ilosc">
+                <button>-</button>
+                <span class="wartosc">3</span>
+                <button>+</button>
+            </div>
+          </div>
+        </div>
+        <div class="przyciski">
+          <div class="zamknij">Zamknij</div>
+          <div class="dalej">
+            <a href="dalej.html"> Dalej </a>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-
-<!-- Skrypt JS -->
-<script src="skrypt.js"></script>
-
-</body>
+    <!-- Skrypt JS -->
+    <script src="skrypt.js"></script>
+  </body>
 </html>
